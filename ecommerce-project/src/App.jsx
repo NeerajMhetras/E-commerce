@@ -1,11 +1,15 @@
 import { HomePage } from './pages/HomePage'
 import './App.css'
+import {Routes, Route} from 'react-router'
  
 
 function App() {
   return (
-    <HomePage>
-    </HomePage>
+    <Routes>
+      <Route index element={<HomePage/>}/>
+      <Route path="checkout" element={<div> Test checkout page </div>}/>
+
+    </Routes>
   )
 }
 
